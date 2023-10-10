@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rave Me Away</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/css/vendors/aos.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body class="font-inter antialiased bg-white text-gray-900 tracking-tight">
+
+    <!-- Page wrapper -->
+    <div class="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
+
+        <!-- Site header -->
+        {{>site-header}}
+
+        <!-- Page content -->
+        <main class="grow">
+            
+            <!-- Hero -->
+            {{>hero}}
+
+            <!-- Features -->
+            {{>features}}
+            
+            <!-- Features blocks -->
+            {{>features-blocks}}
+            
+            <!-- Features world -->
+            {{>features-world}}
+
+            <!-- News -->
+            {{>news}}
+            
+            <!-- Cta -->
+            {{>cta}}
+            
+        </main>
+
+        <!-- Site footer -->
+        {{>footer}}
+
+    </div>
+
+    <script src="/js/vendors/alpinejs.min.js" defer></script>
+    <script src="/js/vendors/aos.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
