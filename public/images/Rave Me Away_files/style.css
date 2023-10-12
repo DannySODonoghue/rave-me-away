@@ -2580,10 +2580,6 @@ html {
   padding-top: 8rem;
 }
 
-.pt-40{
-  padding-top: 300px;
-}
-
 .pt-5{
   padding-top: 1.25rem;
 }
@@ -3412,7 +3408,7 @@ html {
   }
 
   .md\:pt-40{
-    padding-top: 300px;
+    padding-top: 10rem;
   }
 
   .md\:text-left{
