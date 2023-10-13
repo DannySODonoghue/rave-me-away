@@ -1,4 +1,4 @@
-<section class="relative" style="height: 80vh;">
+<section class="relative" style="height: 100vh;">
 
     <!-- Section background (needs .relative class on parent and next sibling elements) -->
     <div class="absolute inset-0 bg-purple-100 pointer-events-none mb-16" aria-hidden="true"></div>
@@ -48,7 +48,8 @@
                             x-transition:leave-start="opacity-100 translate-y-0"
                             x-transition:leave-end="opacity-0 -translate-y-16"
                         >
-                            <div class="relative inline-flex flex-col text-center" style="font-size: 20px; padding-top: {{style}}; padding-left: 10px; padding-right: 10px;">
+                            <div class="relative inline-flex flex-col text-center" style="font-size: 20px; padding-top: 1rem; padding-left: 10px; padding-right: 10px;">
+                                <img class="md:max-w-none mx-auto rounded md:pb-4 pb-4" src="{{image}}" width="500" height="375" alt="injury"/>
                                 <div>{{expansion}}</div>
                             </div>
                         </div>
