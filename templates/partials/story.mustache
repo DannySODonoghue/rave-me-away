@@ -1,0 +1,65 @@
+<section>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="pb-12 md:pb-20">
+
+            <div class="max-w-3xl mx-auto">
+                <h3 class="h3 mb-3"><span class="bg-clip-text text-transparent bg-gradient-to-r bg-purple-1000">{{section1}}</span></h3>
+                <p class="text-lg text-gray-600 mb-8">
+                    {{section1_desc}}
+                </p>
+                <p class="text-lg text-gray-600 mb-8">
+                    {{section1_desc2}}
+                </p>
+            </div>
+
+            <div class="sm:flex">
+                <figure class="flex shrink-0 max-w-none sm:max-w-xs lg:max-w-none mb-8 sm:mb-0">
+                    <img class="grow self-start rounded" src="{{wristband}}" width="435" height="326" alt="wristband" />
+                </figure>
+                <div class="sm:ml-8 lg:ml-16">
+                    <h4 class="h4 mt-8 mb-2"><span class="bg-clip-text text-transparent bg-gradient-to-r bg-purple-1000">{{section2_title}}</span></h4>
+                    <p class="text-lg text-gray-600 mb-8">
+                        {{section2_desc}}
+                    </p>
+                </div>
+            </div>
+
+            <div class="max-w-3xl mt-12 mx-auto">
+                <h4 class="h4 mb-2"><span class="bg-clip-text text-transparent bg-gradient-to-r bg-purple-1000">{{section3_title}}</span></h4>
+                <p class="text-lg text-gray-600">
+                    {{section3_desc}}
+                </p>
+            </div>
+
+            <div class="sm:flex">
+                <figure class="flex shrink-0 max-w-none sm:max-w-xs lg:max-w-none mb-8 mt-12 sm:mb-0">
+                    <img class="grow self-start rounded" src="{{application}}" width="435" height="326" alt="wristband" />
+                </figure>
+                <div class="sm:ml-8 lg:ml-16">
+                    <h4 class="h4 mt-8 mb-2"><span class="bg-clip-text text-transparent bg-gradient-to-r bg-purple-1000">{{section4_title}}</span></h4>
+                    <p class="text-lg text-gray-600 mb-8">
+                        {{section4_desc}}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="pb-12 md:pb-20">
+            <div class="max-w-3xl mx-auto">
+                <h3 class="h3 mb-3"><span class="bg-clip-text text-transparent bg-gradient-to-r bg-purple-1000">{{value}}</span></h3>
+                <ul>
+                    {{#values}}
+                    <li class="mb-2">
+                        <p class="text-lg text-gray-600">
+                            {{item}}
+                        </p>
+                    </li>
+                    {{/values}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

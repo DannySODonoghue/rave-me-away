@@ -69,7 +69,7 @@ router.get('/', (req, res, next) => {
         title: "Learn More",
         body: "Click here to learn more about Rave Me Away's solution",
         image: "/images/learn-more-black.png",
-        link: "about",
+        link: "how-it-works",
         learn_more: "yes"
 
       }
@@ -100,7 +100,100 @@ router.get('/', (req, res, next) => {
 router.get('/about', (req, res, next) => {
   res.render('about', 
   {
-    variable: "hello world"
+    title: "About Us",
+    team: "/images/team.avif",
+    nav_tabs: [
+      {
+        name: "Home",
+        link: "/"
+      },
+      {
+        name: "How it works",
+        link: "how-it-works"
+      },
+      {
+        name: "About us",
+        link: "about"
+      },
+      {
+        name: "Articles",
+        link: ""
+      }
+    ],
+    team_members: [
+      {
+        name: "Charles Hinnant",
+        title: "CEO & Founder",
+        blurb: "",
+        photo: "/images/chheadshot.png",
+        github: "",
+        twitter: "",
+        linkedin: ""
+      },
+      {
+        name: "Ryan Meehan",
+        title: "Software Engineer Intern (Frontend)",
+        blurb: "",
+        photo: "/images/rmheadshot.png",
+        github: "",
+        twitter: "",
+        linkedin: ""
+      },
+      {
+        name: "Will Schmitz",
+        title: "Software Engineer Intern (Frontend)",
+        blurb: "",
+        photo: "/images/wsheadshot.png",
+        github: "",
+        twitter: "",
+        linkedin: ""
+      },
+      {
+        name: "Daniel O'Donoghue",
+        title: "Software Engineer Intern (Backend)",
+        blurb: "",
+        photo: "/images/doheadshot.jpeg",
+        github: "",
+        twitter: "",
+        linkedin: ""
+      },
+      {
+        name: "Chengxin Wu",
+        title: "Software Engineer Intern (Backend)",
+        blurb: "",
+        photo: "/images/cwheadshot.png",
+        github: "",
+        twitter: "",
+        linkedin: ""
+      },
+      {
+        name: "Patricia Schenfield",
+        title: "Financial and Business Intern",
+        blurb: "",
+        photo: "",
+        github: "",
+        twitter: "",
+        linkedin: ""
+      },
+      {
+        name: "Sergio Rodriguez Cifuentes",
+        title: "Project Manager Intern",
+        blurb: "",
+        photo: "",
+        github: "",
+        twitter: "",
+        linkedin: ""
+      },
+      {
+        name: "Angeline Caamano",
+        title: "Marketing Intern",
+        blurb: "",
+        photo: "/images/acheadshot.png",
+        github: "",
+        twitter: "",
+        linkedin: ""
+      }
+    ]
   })
 });
 
@@ -124,7 +217,35 @@ router.get('/how-it-works', (req, res, next) => {
         link: ""
       }
     ],
-    how_it_works_title: "",
+    how_it_works_title: "How It Works",
+    how_it_works_desc: "Join us on this journey as we unveil the future of festival safety and reveal how, together, we can ensure that music festivals are not just memorable but, above all, safe",
+    image: "/images/mapping.jpeg",
+    section1: "RaveMeAway Wristband Technology",
+    section1_desc: "The Rave Me Away wristband utilizes bluetooth capabilities power by two-way RFID chips embedded in the wristband that are connected to 'Gateways' located around the geo-mapped event area.",
+    section1_desc2: "These 'Gateways' act as a radar for all the active RMA wristbands at the event. The wristbands themselves are an upgraded version from the industry standard one-way RFID while still offering industry standard features including credit-card payments and use as a ticket to scan in and out of the event.",
+    wristband: "/images/wristband.png",
+    application: "/images/application.avif",
+    section2_title: "Usage",
+    section2_desc: "The data from the consumers wearing the RMA wristbands will be tracked by our 'Gateways' and sent to our UI hub powered by AWS and co-mingled with our user applications where attendees and event staff can monitor themselves and respond to risk assessment situations.",
+    section3_title: "The RaveMeAway Saas Platform",
+    section3_desc: "Clients have the ability to select annual subscription packages along with the number of events and which locations they'd like to use the product. The platform provides live event calendars and mapping of venue locations. The wristbands themselves are synced to exact permieters and made ready for consumer purchase via venue ticket sales process. There is a 6-month lead time requirement which enables event ownders to optimize their utility for both staff and resources. This guarantees crowds are not oversold and people are not sneaking in increasing safety for equipment, products, staff, and most importantly the attendees.",
+    section4_title: "The RaveMeAway Application",
+    section4_desc: "The RMA application will allow both clients and event users to look at a digital map of the event location that RMA has geo-mapped. Users will be able to see themselves via their wristbands on this digital map and any of their friends wristbands as well as festival locations and events. For Clients the RMA Application will coincide with the “panic button” feature for paramedics to be altered and respond to. In addition the RMA Application will also serve as a backend SAAS Platform to increase tracking, safety, and productivity.",
+    value: "Value",
+    values: [
+      {
+        item: "Cuts down on response time, accurately locates, and provides support to individuals in distress"
+      },
+      {
+        item: "Prevents avoidable loss of life"
+      },
+      {
+        item: "Provides valuable user data for tacking individuals with opt-in policy"
+      },
+      {
+        item: "Decreases insurance liability for event owners for future events"
+      }
+    ]
   })
 });
 
