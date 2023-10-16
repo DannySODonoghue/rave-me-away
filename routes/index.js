@@ -1,9 +1,12 @@
 const { Router } = require('express')
 const router = Router()
 
+const CDN = 'https://cdn.turbo360.co/projects/rma-ttlu89/public'
+
 router.get('/', (req, res, next) => {
   res.render('index', {
-    image: "/images/hero-image-1.avif",
+    CDN,
+    image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/hero-image-1.avif",
     nav_tabs: [
       {
         name: "Home",
@@ -30,21 +33,21 @@ router.get('/', (req, res, next) => {
         prob: `Serious Crowd Injury and Fatalities at Outdoor Music Festivals`,
         expansion: `"Worldwide, nearly 70,000 people suffered significant injury and 232 people died at approximately 300 outdoor music concerts held over a 10-year period"`,
         style: "30%",
-        image: "/images/injury.jpeg"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/injury.jpeg"
       },
       {
         tab: 2,
         prob: "Inefficient Current Technology",
         expansion: `“We use walkie-talkies, paper maps, lightsabers to move a crowd, and sometimes a radio… it once took me and my crew an hour to respond to and eventually find one person in distress at EDC Las Vegas, simply because we had to comb our way through the crowd with lightsabers" -Insomniac Ground Team Member`,
         style: "20%",
-        image: "/images/old-tech.jpeg"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/old-tech.jpeg"
       },
       {
         tab: 3,
         prob: "What Needs To Be Done",
         expansion: "We will solve this problem by providing the staff and festival owners with the proper equipment to do their jobs most efficiently, while giving festival goers a sense of security and peace of mind",
         style: "25%",
-        image: "/images/solution.png"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/solution.png"
       }
     ],
     solution_heading: "Introducing the Rave Me Away Wristband and Application",
@@ -53,22 +56,22 @@ router.get('/', (req, res, next) => {
       {
         title: "Increased Safety for Attendees",
         body: "Cuts down on response time for Paramedic teams, accurately locates users in need, and provides support to individuals in distress",
-        image: "/images/safety.png"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/safety.png"
       },
       {
         title: "Valuable Marketing Data",
         body: "Provides valuable user data for tracking individuals with opt-in policy",
-        image: "/images/marketing-black.png"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/marketing-black.png"
       },
       {
         title: "Lower Financial Risk",
         body: "Decreases insurance liability for event owners and operators",
-        image: "/images/risk.png"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/risk.png"
       },
       {
         title: "Learn More",
         body: "Click here to learn more about Rave Me Away's solution",
-        image: "/images/learn-more-black.png",
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/learn-more-black.png",
         link: "how-it-works",
         learn_more: "yes"
 
@@ -78,19 +81,19 @@ router.get('/', (req, res, next) => {
       {
         title: "Case Study with Saxa Labs",
         author: "Daniel O'Donoghue",
-        image: "/images/casestudy.webp",
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/casestudy.webp",
         link: ""
       },
       {
         title: "EDM.com Feature",
         author: "Cameron Sunkel",
-        image: "/images/edmarticleimage.jpeg",
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/edmarticleimage.jpeg",
         link: "https://edm.com/gear-tech/innovative-festival-wristbands-life-saving-rfid-technology-rave-me-away"
       },
       {
         title: "Georgetown University Case Study",
         author: "Georgetown University Library",
-        image: "/images/gtown-cs.webp",
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/gtown-cs.webp",
         link: "https://library.georgetown.edu/news/maker-hub-invention-boosts-festival-safety"
       }
     ]
@@ -100,8 +103,9 @@ router.get('/', (req, res, next) => {
 router.get('/about', (req, res, next) => {
   res.render('about', 
   {
+    CDN,
     title: "About Us",
-    team: "/images/team.avif",
+    team: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/team.avif",
     nav_tabs: [
       {
         name: "Home",
@@ -125,7 +129,7 @@ router.get('/about', (req, res, next) => {
         name: "Charles Hinnant",
         title: "CEO & Founder",
         blurb: "",
-        photo: "/images/chheadshot.png",
+        photo: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/chheadshot.png",
         github: "",
         twitter: "",
         linkedin: ""
@@ -134,7 +138,7 @@ router.get('/about', (req, res, next) => {
         name: "Ryan Meehan",
         title: "Software Engineer Intern (Frontend)",
         blurb: "",
-        photo: "/images/rmheadshot.png",
+        photo: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/rmheadshot.png",
         github: "",
         twitter: "",
         linkedin: ""
@@ -143,7 +147,7 @@ router.get('/about', (req, res, next) => {
         name: "Will Schmitz",
         title: "Software Engineer Intern (Frontend)",
         blurb: "",
-        photo: "/images/wsheadshot.png",
+        photo: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/wsheadshot.png",
         github: "",
         twitter: "",
         linkedin: ""
@@ -152,7 +156,7 @@ router.get('/about', (req, res, next) => {
         name: "Daniel O'Donoghue",
         title: "Software Engineer Intern (Backend)",
         blurb: "",
-        photo: "/images/doheadshot.jpeg",
+        photo: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/doheadshot.jpeg",
         github: "",
         twitter: "",
         linkedin: ""
@@ -161,7 +165,7 @@ router.get('/about', (req, res, next) => {
         name: "Chengxin Wu",
         title: "Software Engineer Intern (Backend)",
         blurb: "",
-        photo: "/images/cwheadshot.png",
+        photo: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/cwheadshot.png",
         github: "",
         twitter: "",
         linkedin: ""
@@ -188,7 +192,7 @@ router.get('/about', (req, res, next) => {
         name: "Angeline Caamano",
         title: "Marketing Intern",
         blurb: "",
-        photo: "/images/acheadshot.png",
+        photo: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/acheadshot.png",
         github: "",
         twitter: "",
         linkedin: ""
@@ -199,6 +203,7 @@ router.get('/about', (req, res, next) => {
 
 router.get('/how-it-works', (req, res, next) => {
   res.render('how-it-works', {
+    CDN,
     nav_tabs: [
       {
         name: "Home",
@@ -219,12 +224,12 @@ router.get('/how-it-works', (req, res, next) => {
     ],
     how_it_works_title: "How It Works",
     how_it_works_desc: "Join us on this journey as we unveil the future of festival safety and reveal how, together, we can ensure that music festivals are not just memorable but, above all, safe",
-    image: "/images/mapping.jpeg",
+    image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/mapping.jpeg",
     section1: "RaveMeAway Wristband Technology",
     section1_desc: "The Rave Me Away wristband utilizes bluetooth capabilities power by two-way RFID chips embedded in the wristband that are connected to 'Gateways' located around the geo-mapped event area.",
     section1_desc2: "These 'Gateways' act as a radar for all the active RMA wristbands at the event. The wristbands themselves are an upgraded version from the industry standard one-way RFID while still offering industry standard features including credit-card payments and use as a ticket to scan in and out of the event.",
-    wristband: "/images/wristband.png",
-    application: "/images/application.avif",
+    wristband: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/wristband.png",
+    application: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/application.avif",
     section2_title: "Usage",
     section2_desc: "The data from the consumers wearing the RMA wristbands will be tracked by our 'Gateways' and sent to our UI hub powered by AWS and co-mingled with our user applications where attendees and event staff can monitor themselves and respond to risk assessment situations.",
     section3_title: "The RaveMeAway Saas Platform",
@@ -253,19 +258,20 @@ router.get('/version', (req, res, next) => {
   let queryVersion = req.query.version;
   let image = "";
   if (queryVersion === '1'){
-    image = "/images/hero-image-1.avif";
+    image = "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/hero-image-1.avif";
   } 
   else if (queryVersion === '2'){
-    image = "/images/hero-image-2.avif";
+    image = "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/hero-image-2.avif";
   }
   else if (queryVersion === '3') {
-    image = "/images/hero-image-3.avif";
+    image = "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/hero-image-3.avif";
   }
   else {
-    image = "/images/hero-image-1.avif";
+    image = "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/hero-image-1.avif";
   }
   console.log(image);
   res.render('index', {
+    CDN,
     image: image,
     nav_tabs: [
       {
@@ -293,21 +299,21 @@ router.get('/version', (req, res, next) => {
         prob: `Serious Crowd Injury and Fatalities at Outdoor Music Festivals`,
         expansion: `"Worldwide, nearly 70,000 people suffered significant injury and 232 people died at approximately 300 outdoor music concerts held over a 10-year period"`,
         style: "30%",
-        image: "/images/injury.jpeg"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/injury.jpeg"
       },
       {
         tab: 2,
         prob: "Inefficient Current Technology",
         expansion: `“We use walkie-talkies, paper maps, lightsabers to move a crowd, and sometimes a radio… it once took me and my crew an hour to respond to and eventually find one person in distress at EDC Las Vegas, simply because we had to comb our way through the crowd with lightsabers" -Insomniac Ground Team Member`,
         style: "20%",
-        image: "/images/old-tech.jpeg"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/old-tech.jpeg"
       },
       {
         tab: 3,
         prob: "What Needs To Be Done",
         expansion: "We will solve this problem by providing the staff and festival owners with the proper equipment to do their jobs most efficiently, while giving festival goers a sense of security and peace of mind",
         style: "25%",
-        image: "/images/solution.png"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/solution.png"
       }
     ],
     solution_heading: "Introducing the Rave Me Away Wristband and Application",
@@ -316,22 +322,22 @@ router.get('/version', (req, res, next) => {
       {
         title: "Increased Safety for Attendees",
         body: "Cuts down on response time for Paramedic teams, accurately locates users in need, and provides support to individuals in distress",
-        image: "/images/safety.png"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/safety.png"
       },
       {
         title: "Valuable Marketing Data",
         body: "Provides valuable user data for tracking individuals with opt-in policy",
-        image: "/images/marketing-black.png"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/marketing-black.png"
       },
       {
         title: "Lower Financial Risk",
         body: "Decreases insurance liability for event owners and operators",
-        image: "/images/risk.png"
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/risk.png"
       },
       {
         title: "Learn More",
         body: "Click here to learn more about Rave Me Away's solution",
-        image: "/images/learn-more-black.png",
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/learn-more-black.png",
         link: "about",
         learn_more: "yes"
 
@@ -341,19 +347,19 @@ router.get('/version', (req, res, next) => {
       {
         title: "Case Study with Saxa Labs",
         author: "Daniel O'Donoghue",
-        image: "/images/casestudy.webp",
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/casestudy.webp",
         link: ""
       },
       {
         title: "EDM.com Feature",
         author: "Cameron Sunkel",
-        image: "/images/edmarticleimage.jpeg",
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/edmarticleimage.jpeg",
         link: "https://edm.com/gear-tech/innovative-festival-wristbands-life-saving-rfid-technology-rave-me-away"
       },
       {
         title: "Georgetown University Case Study",
         author: "Georgetown University Library",
-        image: "/images/gtown-cs.webp",
+        image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/gtown-cs.webp",
         link: "https://library.georgetown.edu/news/maker-hub-invention-boosts-festival-safety"
       }
     ]
