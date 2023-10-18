@@ -6,7 +6,7 @@ const CDN = 'https://cdn.turbo360.co/projects/rma-ttlu89/public'
 router.get('/', (req, res, next) => {
   res.render('index', {
     CDN,
-    image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/hero-image-1.avif",
+    image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/hero-image-3.avif",
     nav_tabs: [
       {
         name: "Home",
@@ -22,7 +22,7 @@ router.get('/', (req, res, next) => {
       },
       {
         name: "Articles",
-        link: ""
+        link: "articles"
       }
     ],
     company_name: "Rave Me Away",
@@ -121,7 +121,7 @@ router.get('/about', (req, res, next) => {
       },
       {
         name: "Articles",
-        link: ""
+        link: "articles"
       }
     ],
     team_members: [
@@ -219,12 +219,12 @@ router.get('/how-it-works', (req, res, next) => {
       },
       {
         name: "Articles",
-        link: ""
+        link: "articles"
       }
     ],
     how_it_works_title: "How It Works",
     how_it_works_desc: "Join us on this journey as we unveil the future of festival safety and reveal how, together, we can ensure that music festivals are not just memorable but, above all, safe",
-    image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/mapping.jpeg",
+    image: "https://cdn.turbo360.co/projects/rma-ttlu89/public/images/grounds.png",
     section1: "RaveMeAway Wristband Technology",
     section1_desc: "The Rave Me Away wristband utilizes bluetooth capabilities power by two-way RFID chips embedded in the wristband that are connected to 'Gateways' located around the geo-mapped event area.",
     section1_desc2: "These 'Gateways' act as a radar for all the active RMA wristbands at the event. The wristbands themselves are an upgraded version from the industry standard one-way RFID while still offering industry standard features including credit-card payments and use as a ticket to scan in and out of the event.",
@@ -250,6 +250,36 @@ router.get('/how-it-works', (req, res, next) => {
       {
         item: "Decreases insurance liability for event owners for future events"
       }
+    ]
+  })
+});
+
+router.get('/articles', (req, res, next) => {
+  res.render('articles-page', {
+    nav_tabs: [
+      {
+        name: "Home",
+        link: "/"
+      },
+      {
+        name: "How it works",
+        link: "how-it-works"
+      },
+      {
+        name: "About us",
+        link: "about"
+      },
+      {
+        name: "Articles",
+        link: "articles-page"
+      }
+    ],
+    title: "Articles",
+    sub_heading: "See what other people have to say about RaveMeAway",
+    articles: [
+      {name: "RAVE ME AWAY INTRODUCES INNOVATIVE FESTIVAL WRISTBANDS WITH LIFE-SAVING RFID TECHNOLOGY", link: "https://edm.com/gear-tech/innovative-festival-wristbands-life-saving-rfid-technology-rave-me-away", caption: `The "RaveMeAway Wristband" enables festival attendees to communicate remotely when they are in distress via the use of its panic button-like technology`, author: "Cameron Sunkel", date: "Sep 23, 2023"},
+      {name: "Georgetown University Case Study", link: "https://library.georgetown.edu/news/maker-hub-invention-boosts-festival-safety", caption: "Maker Hub Invention Boosts Festival Safety", author: "Georgetown University Library", date: "Sep 26, 2023"},
+      {name: "Case Study with Saxa Labs", link: "", caption: "RaveMeAway is revolutionizing safety in the live event space with its patented wristband, promising to save lives and reduce the dangers associated with modern live events", author: "Daniel O'Donoghue", date: ""}
     ]
   })
 });
