@@ -19,7 +19,7 @@ router.get('/', (req, res, next) => {
       },
       {
         name: "Articles",
-        link: ""
+        link: "articles"
       }
     ],
     company_name: "Rave Me Away",
@@ -117,7 +117,7 @@ router.get('/about', (req, res, next) => {
       },
       {
         name: "Articles",
-        link: ""
+        link: "articles"
       }
     ],
     team_members: [
@@ -214,7 +214,7 @@ router.get('/how-it-works', (req, res, next) => {
       },
       {
         name: "Articles",
-        link: ""
+        link: "articles"
       }
     ],
     how_it_works_title: "How It Works",
@@ -245,6 +245,36 @@ router.get('/how-it-works', (req, res, next) => {
       {
         item: "Decreases insurance liability for event owners for future events"
       }
+    ]
+  })
+});
+
+router.get('/articles', (req, res, next) => {
+  res.render('articles-page', {
+    nav_tabs: [
+      {
+        name: "Home",
+        link: "/"
+      },
+      {
+        name: "How it works",
+        link: "how-it-works"
+      },
+      {
+        name: "About us",
+        link: "about"
+      },
+      {
+        name: "Articles",
+        link: "articles-page"
+      }
+    ],
+    title: "Articles",
+    sub_heading: "See what other people have to say about RaveMeAway",
+    articles: [
+      {name: "RAVE ME AWAY INTRODUCES INNOVATIVE FESTIVAL WRISTBANDS WITH LIFE-SAVING RFID TECHNOLOGY", link: "https://edm.com/gear-tech/innovative-festival-wristbands-life-saving-rfid-technology-rave-me-away", caption: `The "RaveMeAway Wristband" enables festival attendees to communicate remotely when they are in distress via the use of its panic button-like technology`, author: "Cameron Sunkel", date: "Sep 23, 2023"},
+      {name: "Georgetown University Case Study", link: "https://library.georgetown.edu/news/maker-hub-invention-boosts-festival-safety", caption: "Maker Hub Invention Boosts Festival Safety", author: "Georgetown University Library", date: "Sep 26, 2023"},
+      {name: "Case Study with Saxa Labs", link: "", caption: "RaveMeAway is revolutionizing safety in the live event space with its patented wristband, promising to save lives and reduce the dangers associated with modern live events", author: "Daniel O'Donoghue", date: ""}
     ]
   })
 });
