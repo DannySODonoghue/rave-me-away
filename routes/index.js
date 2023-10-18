@@ -3,7 +3,7 @@ const router = Router()
 
 router.get('/', (req, res, next) => {
   res.render('index', {
-    image: "/images/hero-image-1.avif",
+    image: "/images/hero-image-3.avif",
     nav_tabs: [
       {
         name: "Home",
@@ -219,7 +219,7 @@ router.get('/how-it-works', (req, res, next) => {
     ],
     how_it_works_title: "How It Works",
     how_it_works_desc: "Join us on this journey as we unveil the future of festival safety and reveal how, together, we can ensure that music festivals are not just memorable but, above all, safe",
-    image: "/images/mapping.jpeg",
+    image: "/images/grounds.png",
     section1: "RaveMeAway Wristband Technology",
     section1_desc: "The Rave Me Away wristband utilizes bluetooth capabilities power by two-way RFID chips embedded in the wristband that are connected to 'Gateways' located around the geo-mapped event area.",
     section1_desc2: "These 'Gateways' act as a radar for all the active RMA wristbands at the event. The wristbands themselves are an upgraded version from the industry standard one-way RFID while still offering industry standard features including credit-card payments and use as a ticket to scan in and out of the event.",
