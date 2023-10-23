@@ -1,4 +1,35 @@
-<section class="relative" style="height: 100vh;">
+<style>
+@media (max-width: 640px) {
+    .device-button {
+        width: 90vw; 
+        display: flex; 
+        justify-content: space-between; 
+        margin-top: 25px;
+    }
+    .section-height-features {
+        height: 65rem;
+    }
+    .problem-text {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+  }
+  
+  @media (min-width: 641px) {
+    .device-button {
+        width: 500px; 
+        display: flex; 
+        justify-content: space-between; 
+        margin-top: 25px;
+    }
+    .section-height-features {
+        height: 100vh;
+    }
+  }
+    
+</style>
+<section class="relative section-height-features">
 
     <!-- Section background (needs .relative class on parent and next sibling elements) -->
     <div class="absolute inset-0 bg-purple-100 pointer-events-none mb-16" aria-hidden="true"></div>
@@ -22,12 +53,11 @@
                         {{#problems}}
                         <button
                             :class="tab !== '{{tab}}' ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'"
-                            class="text-left flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3"
+                            class="text-left flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 device-button"
                             @click.prevent
                             @click="tab = '{{tab}}'"
-                            style="width: 500px; display: flex; justify-content: space-between; margin-top: 25px;"
                         >
-                            <div class="font-bold leading-snug tracking-tight mb-1">{{prob}}</div>
+                            <div class="font-bold leading-snug tracking-tight mb-1 problem-text">{{prob}}</div>
                         </button>
                         {{/problems}}
                     </div>
@@ -48,8 +78,8 @@
                             x-transition:leave-start="opacity-100 translate-y-0"
                             x-transition:leave-end="opacity-0 -translate-y-16"
                         >
-                            <div class="relative inline-flex flex-col text-center" style="font-size: 20px; padding-top: 1rem; padding-left: 10px; padding-right: 10px;">
-                                <img class="md:max-w-none mx-auto rounded md:pb-4 pb-4" src="{{image}}" width="500" height="375" alt="injury"/>
+                            <div class="relative inline-flex flex-col text-center" style="font-size: 20px; padding-top: 3rem; padding-left: 10px; padding-right: 10px;">
+                                <img class="md:max-w-none mx-auto rounded md:pb-4 pb-4" src="{{image}}" width="300" height="375" alt="injury"/>
                                 <div>{{expansion}}</div>
                             </div>
                         </div>

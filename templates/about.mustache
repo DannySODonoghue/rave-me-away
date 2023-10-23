@@ -26,7 +26,7 @@
 
                         <!-- Section header -->
                         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                            <h2 class="h2 mb-4">The people behind the product</h2>
+                            <h2 class="h2 mb-4">{{sub_heading}}</h2>
                         </div>
 
                         <!-- Team members -->
@@ -36,13 +36,21 @@
                             {{#team_members}}
                             <div class="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-anchor="[data-aos-id-team]">
                                 <div class="flex flex-col items-center">
-
-                                    <img class="rounded-full mb-4" src="{{photo}}" width="120" height="120" alt="{{name}}" />
+                                    <div class="rounded-full mb-4" style="background-image: url('{{photo}}'); background-size: cover; width: 120px; height: 120px;"></div>
+                                    <!--<img class="rounded-full mb-4" src="{{photo}}" width="120" height="120" alt="{{name}}" />-->
                                     <h4 class="text-xl font-bold mb-1">{{name}}</h4>
                                     <div class="text-blue-600 font-medium mb-2">{{title}}</div>
                                     <p class="text-gray-600 text-center mb-3">{{blurb}}</p>
                                     <div class="text-sm text-gray-600 font-medium">
-                                        <a class="text-gray-900 hover:underline" href="{{twitter}}">Twitter</a> · <a class="text-gray-900 hover:underline" href="{{github}}">GitHub</a> · <a class="text-gray-900 hover:underline" href="{{linkedin}}">LinkedIn</a>
+                                        {{#instagram}}
+                                        <a class="text-gray-900 hover:underline" href="{{instagram}}">Instagram</a> · 
+                                        {{/instagram}}
+                                        {{#github}}
+                                        <a class="text-gray-900 hover:underline" href="{{github}}">GitHub</a> · 
+                                        {{/github}}
+                                        {{#linkedin}}
+                                        <a class="text-gray-900 hover:underline" href="{{linkedin}}">LinkedIn</a>
+                                        {{/linkedin}}
                                     </div>
                                 </div>
                             </div>
