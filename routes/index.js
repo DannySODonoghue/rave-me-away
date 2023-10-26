@@ -252,6 +252,7 @@ router.get('/how-it-works', (req, res, next) => {
 
 router.get('/articles', (req, res, next) => {
   res.render('articles-page', {
+    CDN,
     nav_tabs: [
       // {
       //   name: "Home",
