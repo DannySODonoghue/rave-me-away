@@ -3545,3 +3545,21 @@ html {
     padding-right: 4rem;
   }
 }
+
+@media (max-width: 640px) {
+  .device-button {
+      width: 365px; 
+      display: flex; 
+      justify-content: space-between; 
+      margin-top: 25px;
+  }
+}
+
+@media (min-width: 641px) {
+  .device-button {
+      width: 500px; 
+      display: flex; 
+      justify-content: space-between; 
+      margin-top: 25px;
+  }
+}

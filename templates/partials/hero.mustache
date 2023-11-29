@@ -1,4 +1,17 @@
-<section class="relative" style="height: 100vh;">
+<style>
+    @media (max-width: 640px) {
+        .section-height-hero {
+            height: 45rem;
+        }
+      }
+      
+      @media (min-width: 641px) {
+        .section-height-hero {
+            height: 100vh;
+        }
+      }
+</style>
+<section class="relative section-height-hero">
 
     <!-- Illustration behind hero content -->
     <div class="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
