@@ -138,7 +138,7 @@ router.get('/about', (req, res, next) => {
       {
         name: "Ryan Meehan",
         title: "Software Engineer Intern (Frontend)",
-        blurb: "I am a computer science student - and aspiring software developer - studying at Georgetown University",
+        blurb: "",
         photo: `${CDN}/images/rmheadshot.png`,
         github: "https://github.com/RyanMeehan13",
         instagram: "https://www.instagram.com/_ryanmeehan/",
@@ -219,19 +219,19 @@ router.get('/how-it-works', (req, res, next) => {
       }
     ],
     how_it_works_title: "How It Works",
-    how_it_works_desc: "Join us on this journey as we unveil the future of festival safety and reveal how, together, we can ensure that music festivals are not just memorable but, above all, safe",
+    how_it_works_desc: "Join us on this journey as we unveil the future of festival safety and reveal how, together, we can ensure that music festivals are not just memorable but, above all, safe.",
     image: `${CDN}/images/grounds.png`,
     section1: "RaveMeAway Wristband Technology",
-    section1_desc: "The Rave Me Away wristband utilizes bluetooth capabilities power by two-way RFID chips embedded in the wristband that are connected to 'Gateways' located around the geo-mapped event area.",
-    section1_desc2: "These 'Gateways' act as a radar for all the active RMA wristbands at the event. The wristbands themselves are an upgraded version from the industry standard one-way RFID while still offering industry standard features including credit-card payments and use as a ticket to scan in and out of the event.",
+    section1_desc: "The Rave Me Away wristband utilizes bluetooth capabilities powered by two-way RFID chips embedded in the wristband that are connected to 'Gateways' located around the geo-mapped event area.",
+    section1_desc2: "These 'Gateways' act as a radar for all the active RMA wristbands at the event. The wristbands themselves are an upgraded version from the common practice one-way RFID while still offering industry standard features including credit-card payments and use as a ticket to scan in and out of the event.",
     wristband: `${CDN}/images/wristband.png`,
     application: `${CDN}/images/application.avif`,
     section2_title: "Usage",
-    section2_desc: "The data from the consumers wearing the RMA wristbands will be tracked by our 'Gateways' and sent to our UI hub powered by AWS and co-mingled with our user applications where attendees and event staff can monitor themselves and respond to risk assessment situations.",
+    section2_desc: "The data from the consumers wearing the RMA wristbands will be tracked by our 'Gateways' and sent to our UI hub powered by AWS. This is co-mingled with our user applications where attendees and event staff can monitor themselves and respond to risk assessment situations.",
     section3_title: "The RaveMeAway Saas Platform",
-    section3_desc: "Clients have the ability to select annual subscription packages along with the number of events and which locations they'd like to use the product. The platform provides live event calendars and mapping of venue locations. The wristbands themselves are synced to exact permieters and made ready for consumer purchase via venue ticket sales process. There is a 6-month lead time requirement which enables event ownders to optimize their utility for both staff and resources. This guarantees crowds are not oversold and people are not sneaking in increasing safety for equipment, products, staff, and most importantly the attendees.",
+    section3_desc: "Clients have the ability to select annual subscription packages along with the number of events and which locations they'd like to use the product. The platform provides live event calendars and mapping of venue locations. The wristbands themselves are synced to exact perimeters and made ready for consumer purchase via venue ticket sales process. There is a 6-month lead time requirement which enables event owners to optimize their utility for both staff and resources. This guarantees crowds are not oversold, and people are not sneaking in, increasing safety for equipment, products, staff, and most importantly, the attendees.",
     section4_title: "The RaveMeAway Application",
-    section4_desc: "The RMA application will allow both clients and event users to look at a digital map of the event location that RMA has geo-mapped. Users will be able to see themselves via their wristbands on this digital map and any of their friends wristbands as well as festival locations and events. For Clients the RMA Application will coincide with the “panic button” feature for paramedics to be altered and respond to. In addition the RMA Application will also serve as a backend SAAS Platform to increase tracking, safety, and productivity.",
+    section4_desc: "The RMA application will allow both clients and event users to look at a digital map of the event location that RMA has geo-mapped. Users will be able to see themselves and their friends via their wristbands on this digital map, as well as festival locations and events. For Clients, the RMA Application will coincide with the “panic button” feature for paramedics to be alerted and respond to. In addition, the RMA Application will also serve as a backend SAAS Platform to increase tracking, safety, and productivity.",
     value: "Value",
     values: [
       {
@@ -241,7 +241,7 @@ router.get('/how-it-works', (req, res, next) => {
         item: "Prevents avoidable loss of life"
       },
       {
-        item: "Provides valuable user data for tacking individuals with opt-in policy"
+        item: "Provides valuable user data for tracking individuals with opt-in policy"
       },
       {
         item: "Decreases insurance liability for event owners for future events"
@@ -276,7 +276,10 @@ router.get('/articles', (req, res, next) => {
     articles: [
       {name: "RAVE ME AWAY INTRODUCES INNOVATIVE FESTIVAL WRISTBANDS WITH LIFE-SAVING RFID TECHNOLOGY", link: "https://edm.com/gear-tech/innovative-festival-wristbands-life-saving-rfid-technology-rave-me-away", caption: `The "RaveMeAway Wristband" enables festival attendees to communicate remotely when they are in distress via the use of its panic button-like technology`, author: "Cameron Sunkel", date: "Sep 23, 2023"},
       {name: "Georgetown University Case Study", link: "https://library.georgetown.edu/news/maker-hub-invention-boosts-festival-safety", caption: "Maker Hub Invention Boosts Festival Safety", author: "Georgetown University Library", date: "Sep 26, 2023"},
-      {name: "Case Study with Saxa Labs", link: "", caption: "RaveMeAway is revolutionizing safety in the live event space with its patented wristband, promising to save lives and reduce the dangers associated with modern live events", author: "Daniel O'Donoghue", date: ""}
+      {name: "Case Study with Saxa Labs", link: "", caption: "RaveMeAway is revolutionizing safety in the live event space with its patented wristband, promising to save lives and reduce the dangers associated with modern live events", author: "Daniel O'Donoghue", date: ""},
+      {name: "Yahoo Finance Article", link: "https://finance.yahoo.com/news/events-tech-startup-rave-away-162800579.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAAz-Tnh8YxUmai1Vaeqkk9Kvsgg7wBwG5hJ14aWcl_gPEmyRoqFo2iG7GftXchNoOZ9RTBmIUruTgZpBBW8EQ9BPOQiGSr67XrcV2YAQ5LHer9nusnZD8KamvDXAFkDCFJxEtu-fOF_Gf_2RXPpdjtwd6UGOlsEYzkJzeUC_xtDe", caption: "Events Tech Startup Rave Me Away Seeks Investment to Accelerate Development of Crowd Safety Solutions", author: "Yahoo.com", date: "Nov 3, 2023"},
+      {name: "Benzinga Article", link: "https://www.benzinga.com/pressreleases/23/11/g35596110/events-tech-startup-rave-me-away-seeks-investment-to-accelerate-development-of-crowd-safety-soluti", caption: "Events Tech Startup Rave Me Away Seeks Investment to Accelerate Development of Crowd Safety Solutions", author: "Benzinga.com", date: "Nov 3, 2023"},
+      {name: "Bloomberg Article", link: "https://www.bloomberg.com/press-releases/2023-11-03/events-tech-startup-rave-me-away-seeks-investment-to-accelerate-development-of-crowd-safety-solutions", caption: "Events Tech Startup Rave Me Away Seeks Investment to Accelerate Development of Crowd Safety Solutions", author: "Bloomberg.com", date: "Nov 3, 2023"}
     ]
   })
 });
@@ -388,6 +391,24 @@ router.get('/version', (req, res, next) => {
         author: "Georgetown University Library",
         image: `${CDN}/images/gtown-cs.webp`,
         link: "https://library.georgetown.edu/news/maker-hub-invention-boosts-festival-safety"
+      },
+      {
+        title: "Yahoo Finance Article",
+        author: "Yahoo.com",
+        image: `${CDN}/images/gtown-cs.webp`,
+        link: "https://finance.yahoo.com/news/events-tech-startup-rave-away-162800579.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAAz-Tnh8YxUmai1Vaeqkk9Kvsgg7wBwG5hJ14aWcl_gPEmyRoqFo2iG7GftXchNoOZ9RTBmIUruTgZpBBW8EQ9BPOQiGSr67XrcV2YAQ5LHer9nusnZD8KamvDXAFkDCFJxEtu-fOF_Gf_2RXPpdjtwd6UGOlsEYzkJzeUC_xtDe"
+      },
+      {
+        title: "Benzinga Article",
+        author: "Benzinga.com",
+        image: `${CDN}/images/gtown-cs.webp`,
+        link: "https://www.benzinga.com/pressreleases/23/11/g35596110/events-tech-startup-rave-me-away-seeks-investment-to-accelerate-development-of-crowd-safety-soluti"
+      },
+      {
+        title: "Bloomberg Article",
+        author: "Bloomberg.com",
+        image: `${CDN}/images/gtown-cs.webp`,
+        link: "https://www.bloomberg.com/press-releases/2023-11-03/events-tech-startup-rave-me-away-seeks-investment-to-accelerate-development-of-crowd-safety-solutions"
       }
     ]
   })
